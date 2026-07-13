@@ -1784,7 +1784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (11)
+      value: goomba_11
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -1848,7 +1848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (1)
+      value: goomba_1
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -2576,7 +2576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (13)
+      value: goomba_13
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -3636,7 +3636,7 @@ GameObject:
   - component: {fileID: 380338178}
   - component: {fileID: 380338179}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Mario
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3659,6 +3659,7 @@ MonoBehaviour:
   Gameover_text: {fileID: 442180521}
   uiCanvas: {fileID: 581688414}
   is_big: 0
+  is_gameover: 0
 --- !u!212 &380338174
 SpriteRenderer:
   serializedVersion: 2
@@ -5150,9 +5151,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME OVER!!!
+  m_text: GAME OVER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 28fc4ec1d796c544b8b8161f3f2c362f, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5177,15 +5178,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -5219,7 +5220,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &442180522
@@ -6642,7 +6643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (7)
+      value: goomba_7
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -7389,7 +7390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (2)
+      value: goomba_2
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -7829,7 +7830,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1724370141}
   - {fileID: 442180520}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10179,7 +10179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (6)
+      value: goomba_6
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -14874,7 +14874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (10)
+      value: goomba_10
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -15064,7 +15064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1290783407}
   m_Layer: 0
-  m_Name: Togan
+  m_Name: togwan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19143,7 +19143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (3)
+      value: goomba_3
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -19568,81 +19568,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1724370140
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1724370141}
-  - component: {fileID: 1724370143}
-  - component: {fileID: 1724370142}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1724370141
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724370140}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 581688418}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.3}
-  m_AnchorMax: {x: 1, y: 0.7}
-  m_AnchoredPosition: {x: 0, y: 0.0000038146973}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1724370142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724370140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.0013728142, b: 1, a: 0.42745098}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1724370143
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724370140}
-  m_CullTransparentMesh: 1
 --- !u!1 &1746163266
 GameObject:
   m_ObjectHideFlags: 0
@@ -19878,7 +19803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (8)
+      value: goomba_8
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -20606,7 +20531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (4)
+      value: goomba_4
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -20689,7 +20614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160
+      value: goomba
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -21251,7 +21176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (5)
+      value: goomba_5
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -21647,7 +21572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (12)
+      value: goomba_12
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString
@@ -22228,7 +22153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_Name
-      value: characters_160 (9)
+      value: goomba_9
       objectReference: {fileID: 0}
     - target: {fileID: 7496254464959646441, guid: d45dc3b3162be4748a121b5d74b2239a, type: 3}
       propertyPath: m_TagString

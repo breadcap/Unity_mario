@@ -1,4 +1,4 @@
-using System.Collections; // 👈 코루틴(IEnumerator)을 쓰기 위해 필수 추가!
+using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float jumpForce = 9f;
+    public float jumpForce = 4f;
 
 
     public TMP_Text Gameover_text;
@@ -18,12 +18,12 @@ public class Player : MonoBehaviour
     private bool isGrounded;
 
     public bool is_big = false;
-    private bool isInvincible = false; // 👈 1. 무적 상태 체크용 변수 추가
+    private bool isInvincible = false;
 
     private BoxCollider2D box;
     private Animator animator;
 
-    private bool is_gameover = false;
+    public bool is_gameover = false;
 
     void Start()
     {
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
 
         // 점프
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
         {
             foreach (ContactPoint2D contact in collision.contacts)
             {
-                // 플레이어가 아래에서 박스를 침
+                // 박스 히트
                 if (contact.normal.y < -0.5f)
                 {
                     MysteryBox box = collision.gameObject.GetComponent<MysteryBox>();
@@ -176,7 +176,7 @@ public class Player : MonoBehaviour
             transform.position.z
         );
 
-        // 👈 2. 작아진 직후 무적 코루틴 시작
+        
         StartCoroutine(InvincibleRoutine());
     }
 
@@ -184,7 +184,7 @@ public class Player : MonoBehaviour
 
     public void Hit()
     {
-        //  무적 상태일 때는 몬스터에게 부딪혀도 아래 대미지 로직을 무시하고 리턴
+        
         if (isInvincible) return;
 
         if (is_big)
@@ -198,42 +198,37 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+
     public void Gameover(int state)
     {
+        is_gameover = true;
 
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
 
         uiCanvas.SetActive(true);
 
-        if(state == 0)
+        if (state == 0)
         {
-            gameover_intext = "GAME OVER!!!";
-
+            gameover_intext = "GAME OVER...";
         }
-        if(state == 1)
+        if (state == 1)
         {
-            gameover_intext = "GAME CLEAR!";
-
+            gameover_intext = "COURSE CLEAR!";
         }
-
-
 
         Gameover_text.text = gameover_intext;
     }
-    
-    
-    // 👈 4. 1초 동안 무적을 유지하는 코루틴 함수 추가
+
+
+
     private IEnumerator InvincibleRoutine()
     {
         isInvincible = true;
-        
-        // (선택사항) 무적 상태일 때 캐릭터를 반투명하게 하거나 깜빡거리게 만들면 좋습니다.
-        // GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
-
-        yield return new WaitForSeconds(1f); // 1초 대기
-
-        // (선택사항) 무적이 끝나면 원래 색상으로 복구
-        // GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+               
+        yield return new WaitForSeconds(1f); // 1초 대기      
 
         isInvincible = false;
     }
